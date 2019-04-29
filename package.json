@@ -1,0 +1,38 @@
+{
+  "name": "github-battle",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "NODE_ENV='production' webpack",
+    "build-for-windows": "SET NODE_ENV='production' && webpack",
+    "firebase-init": "firebase login && firebase init",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "keywords": [],
+  "author": "Adil Zeshan <adil.zeshan@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "prop-types": "^15.6.2",
+    "query-string": "^6.2.0",
+    "react": "^16.8.0-alpha.1",
+    "react-dom": "^16.8.0-alpha.1",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "firebase-tools": "^6.3.0",
+    "html-webpack-plugin": "^3.2.0",
+    "react-hot-loader": "^4.3.12",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
